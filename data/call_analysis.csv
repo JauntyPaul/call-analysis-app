@@ -1,2 +1,5 @@
 Transcript,Summary,Sentiment
+I tried logging into my account this morning but the system said the session had expired. I refreshed the page and it worked fine after that.,"The customer experienced a session expiration issue while logging into their account, but was able to resolve it by refreshing the page.",Neutral
+"I waited on hold for 25 minutes before someone picked up, and then the call got disconnected immediately.",The customer experienced a long wait time and a call disconnection issue.,Negative.
+The appointment was rescheduled automatically and I didn’t have to call customer care. That saved me a lot of time.,"The customer's appointment was rescheduled automatically, saving them time. They expressed satisfaction with this process.",Positive
 "The software update installed overnight, but now none of my saved settings are showing up and my shortcuts are gone.",The customer's saved settings and shortcuts are missing after a software update.,Negative
