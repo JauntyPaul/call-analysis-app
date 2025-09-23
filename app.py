@@ -1,15 +1,15 @@
-from flask import Flask, request, jsonify,render_template
+from flask import Flask, request, jsonify, render_template, redirect, url_for
 from services.analyzer import summarize_transcript, analyze_sentiment
 from utils.file_manager import save_to_csv
 
 app = Flask(__name__)
 
-@app.route("/home")
+@app.route("/")
 def home():
-    return "📞 Call Analysis API is running!"
+    # Redirect root to UI
+    return redirect(url_for("ui"))
 
-
-@app.route("/", methods=["GET", "POST"])
+@app.route("/ui", methods=["GET", "POST"])
 def ui():
     if request.method == "POST":
         transcript = request.form["transcript"]
