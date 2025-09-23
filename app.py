@@ -4,12 +4,12 @@ from utils.file_manager import save_to_csv
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/home")
 def home():
     return "📞 Call Analysis API is running!"
 
 
-@app.route("/ui", methods=["GET", "POST"])
+@app.route("/", methods=["GET", "POST"])
 def ui():
     if request.method == "POST":
         transcript = request.form["transcript"]
